@@ -1,22 +1,28 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: #0f172a;
+  background: radial-gradient(circle at top, #0f172a, #020617);
   color: #f8fafc;
   margin: 0;
   text-align: center;
 }
 
 header {
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   background: linear-gradient(90deg, #2563eb, #9333ea);
   color: white;
 }
 
 header h1 {
-  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  margin: 0;
 }
 
-.projects {
+header p {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+}
+
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -25,10 +31,10 @@ header h1 {
 
 .card {
   background: #1e293b;
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .card:hover {
@@ -62,7 +68,7 @@ header h1 {
 }
 
 footer {
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 1rem;
   font-size: 0.9rem;
   color: #94a3b8;
