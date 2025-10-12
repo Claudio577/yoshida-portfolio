@@ -41,12 +41,12 @@ header p {
   border-radius: 18px;
   padding: 1.5rem;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
   border: 1px solid rgba(45, 212, 191, 0.1);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  transform: translateZ(0);
 }
 
 .card:hover {
-  transform: scale(1.03);
   box-shadow: 0 6px 22px rgba(16, 185, 129, 0.4);
   border-color: rgba(45, 212, 191, 0.25);
 }
@@ -83,7 +83,8 @@ header p {
   box-shadow: 0 0 18px rgba(45, 212, 191, 0.6);
 }
 
-.btn-como-usar, .btn-tecnologias {
+.btn-como-usar,
+.btn-tecnologias {
   border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -118,62 +119,61 @@ header p {
   transform: translateY(-2px);
 }
 
-/* ===== Modal ===== */
-.modal {
-  display: none;
+/* ===== Sidebar Explicação ===== */
+.sidebar {
   position: fixed;
-  z-index: 9999;
-  left: 0;
   top: 0;
-  width: 100vw;
+  right: -400px;
+  width: 400px;
+  max-width: 90%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(3px);
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.25s ease;
-}
-
-.modal-content {
-  background-color: #111827;
-  padding: 25px;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 500px;
-  border: 1px solid rgba(45, 212, 191, 0.4);
+  background: #0f172a;
   color: #f8fafc;
-  text-align: left;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  animation: fadeIn 0.3s ease;
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
+  padding: 2rem 1.5rem;
+  transition: right 0.4s ease;
+  z-index: 9999;
+  overflow-y: auto;
+  border-left: 1px solid rgba(45, 212, 191, 0.3);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+.sidebar.aberta {
+  right: 0;
 }
 
-.chave-api {
-  background: #1e293b;
-  padding: 8px;
-  border-radius: 6px;
-  font-family: monospace;
-  color: #a7f3d0;
-  text-align: center;
-  font-size: 0.9rem;
-  margin: 8px 0;
-}
-
-.fechar {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
+.fechar-sidebar {
+  position: absolute;
+  top: 10px;
+  right: 16px;
   background: none;
   border: none;
+  font-size: 28px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
-.fechar:hover {
-  color: #fff;
+
+.fechar-sidebar:hover {
+  color: #f8fafc;
+}
+
+.sidebar h2 {
+  color: #6ee7b7;
+  margin-top: 40px;
+}
+
+.sidebar p,
+.sidebar code {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.sidebar code {
+  background: #1e293b;
+  color: #a7f3d0;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-family: monospace;
 }
 
 /* ===== Rodapé ===== */
