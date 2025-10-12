@@ -84,7 +84,8 @@
     <p>© 2025 Claudio Portfólio · IA e Blockchain • Desenvolvido por Claudio Hideki Yoshida</p>
   </footer>
 
-  <!-- ===== Sidebar Explicação ===== -->
+  <!-- ===== Overlay e Sidebar ===== -->
+  <div id="overlay" class="overlay" onclick="fecharSidebar()"></div>
   <div id="sidebar" class="sidebar">
     <button class="fechar-sidebar" onclick="fecharSidebar()">×</button>
     <div id="sidebar-content"></div>
@@ -95,14 +96,18 @@
     function abrirSidebar(conteudo) {
       const sidebar = document.getElementById("sidebar");
       const content = document.getElementById("sidebar-content");
+      const overlay = document.getElementById("overlay");
       content.innerHTML = conteudo;
       sidebar.classList.add("aberta");
+      overlay.classList.add("visivel");
       document.body.style.overflow = "hidden";
     }
 
     function fecharSidebar() {
       const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
       sidebar.classList.remove("aberta");
+      overlay.classList.remove("visivel");
       document.body.style.overflow = "auto";
     }
   </script>
