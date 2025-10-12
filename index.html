@@ -49,44 +49,59 @@
         </div>
       </div>
 
-      <!-- Projeto 2 -->
-      <div class="card">
-        <h2>🐶 AnimaIA</h2>
-        <p>Modelo de IA que prevê gravidade de casos veterinários com base em anamnese.</p>
-        <div class="actions">
-          <a href="https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-          <button class="btn-como-usar" onclick="abrirSidebar(`
-            <h2>💡 Como Usar – AnimaIA</h2>
-            <p>O <strong>ClínicaVet Final</strong> utiliza IA para prever gravidade de casos veterinários a partir da anamnese do paciente.</p>
-            <ul>
-              <li>✍️ Insira sintomas, idade, temperatura e comportamento.</li>
-              <li>🔍 Clique em <strong>Analisar</strong> para processar os dados.</li>
-              <li>📊 O sistema exibirá:
-                <ul>
-                  <li>🏥 Necessidade de internação</li>
-                  <li>☠️ Probabilidade de eutanásia</li>
-                  <li>📅 Tempo estimado de internação</li>
-                  <li>💊 Chance de alta</li>
-                </ul>
-              </li>
-            </ul>
-            <p>O objetivo é auxiliar o médico-veterinário na triagem de casos clínicos, destacando os mais críticos. 🚑</p>
-            <a href='https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
-          `)">💡 Como Usar</button>
-          <button class="btn-tecnologias" onclick="abrirSidebar(`
-            <h2>⚙️ Tecnologias – AnimaIA</h2>
-            <p>Combina técnicas de <strong>Machine Learning</strong> e <strong>Processamento de Linguagem Natural</strong> para analisar texto clínico.</p>
-            <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
-              <li>🐍 <strong>Python</strong> — linguagem principal.</li>
-              <li>📊 <strong>Pandas e NumPy</strong> — pré-processamento de dados clínicos.</li>
-              <li>🧠 <strong>Scikit-learn</strong> — modelo <em>Random Forest</em> para previsões de risco.</li>
-              <li>🧩 <strong>Streamlit</strong> — interface web interativa.</li>
-              <li>🔡 <strong>Regex</strong> e <strong>Unicodedata</strong> — limpeza e normalização textual.</li>
-            </ul>
-            <p>Cria uma ferramenta acessível e educativa, demonstrando IA aplicada à saúde animal. 🐕‍🦺</p>
-          `)">⚙️ Tecnologias</button>
-        </div>
+    <!-- Projeto 2 -->
+<div class="card">
+  <h2>🐶 AnimalIA</h2>
+  <p>Modelo de IA que prevê gravidade de casos veterinários com base em anamnese.</p>
+  <div class="actions">
+    <a href="https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
+    <button class="btn-como-usar" onclick="abrirSidebar(`
+      <h2>💡 Como Usar – AnimalIA</h2>
+      <p>O <strong>AnimalIA/strong> é um sistema inteligente que avalia anamneses veterinárias e prevê a gravidade do caso, auxiliando o profissional na triagem clínica.</p>
+
+      <p>Para utilizar:</p>
+      <ul>
+        <li>✍️ Insira uma anamnese real ou resumida (idade, sintomas, temperatura etc.).</li>
+        <li>🔍 Clique em <strong>Analisar</strong> para o sistema processar o texto.</li>
+        <li>📊 O modelo exibirá previsões como:</li>
+        <ul>
+          <li>🏥 Necessidade de internação</li>
+          <li>☠️ Probabilidade de eutanásia</li>
+          <li>📅 Estimativa de dias internado</li>
+          <li>💊 Possibilidade de alta</li>
+        </ul>
+      </ul>
+
+      <h3 style='margin-top:20px;'>📋 Exemplos de Anamnese para Teste</h3>
+      <div style='background:#1e293b; padding:12px 14px; border-left:4px solid #38bdf8; border-radius:6px; margin-top:10px; text-align:left;'>
+        <p><strong>1️⃣ Caso leve – gastroenterite:</strong><br>
+        Cachorro macho, 3 anos, 10 kg. Está com diarreia leve há dois dias, mas ainda come e bebe água normalmente. Temperatura 38,3 °C. Apetite normal, anda normalmente, sem sinais de dor. Fezes um pouco amolecidas, sem sangue.</p>
+
+        <p><strong>2️⃣ Caso moderado – parvovirose:</strong><br>
+        Filhote macho de 4 meses, 6 kg, com vômitos e diarreia com sangue há dois dias. Não come, está fraco e desidratado. Temperatura 39,6 °C. Mucosas pálidas. Suspeita de parvovirose.</p>
+
+        <p><strong>3️⃣ Caso grave – insuficiência renal:</strong><br>
+        Cão idoso, 12 anos, 18 kg. Apático, sem apetite, não urina há 24h, hálito amoniacal, mucosas pálidas. Temperatura 37,9 °C. Suspeita de insuficiência renal crônica terminal.</p>
       </div>
+
+      <p style='margin-top:15px;'>Esses exemplos cobrem diferentes níveis de gravidade e ajudam a visualizar o funcionamento da IA. 🧠🐾</p>
+      <a href='https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
+    `)">💡 Como Usar</button>
+
+    <button class="btn-tecnologias" onclick="abrirSidebar(`
+      <h2>⚙️ Tecnologias – AnimalIA</h2>
+      <p>O <strong>AnimalIA</strong> combina técnicas de <strong>Machine Learning</strong> e <strong>Processamento de Linguagem Natural</strong> (NLP) para interpretar texto clínico e prever gravidade de casos.</p>
+      <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
+        <li>🐍 <strong>Python</strong> — linguagem principal.</li>
+        <li>📊 <strong>Pandas e NumPy</strong> — pré-processamento de dados clínicos.</li>
+        <li>🧠 <strong>Scikit-learn</strong> — modelo <em>Random Forest</em> para previsão.</li>
+        <li>🧩 <strong>Streamlit</strong> — interface web interativa.</li>
+        <li>🔡 <strong>Regex</strong> e <strong>Unicodedata</strong> — extração e limpeza de texto.</li>
+      </ul>
+      <p>Ferramenta educativa e acessível que demonstra o uso de IA na análise veterinária. 🐕‍🦺</p>
+    `)">⚙️ Tecnologias</button>
+  </div>
+</div>
 
       <!-- Projeto 3 -->
       <div class="card">
