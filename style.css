@@ -184,6 +184,15 @@ footer {
   color: #fff;
 }
 
+/* ===== Correção de layout da chave API ===== */
+.chave-api {
+  display: block;
+  overflow-wrap: anywhere; /* quebra linhas longas automaticamente */
+  text-align: center;      /* centraliza o texto */
+  font-size: 0.9rem;       /* deixa a fonte um pouco menor */
+}
+
+
 /* ===== Correção para modais ===== */
 .modal {
   display: none;
