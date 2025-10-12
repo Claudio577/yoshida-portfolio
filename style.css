@@ -137,13 +137,14 @@ footer {
 .modal {
   display: none;
   position: fixed;
-  z-index: 9999; /* fica por cima de tudo */
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  overflow-y: auto; /* evita corte do conteúdo */
+  overflow-y: auto;
+  animation: fadeIn 0.3s ease; /* animação suave ao abrir */
 }
 
 .modal-content {
@@ -158,6 +159,7 @@ footer {
   color: #f8fafc;
   text-align: left;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  animation: slideIn 0.3s ease;
 }
 
 .modal-content h2 {
@@ -167,14 +169,14 @@ footer {
 
 .chave-api {
   display: block;
-  overflow-wrap: anywhere; /* quebra linhas longas automaticamente */
+  overflow-wrap: anywhere;
   background: #1e293b;
   padding: 8px;
   border-radius: 6px;
   font-family: monospace;
   color: #a7f3d0;
-  text-align: center;      /* centraliza o texto */
-  font-size: 0.9rem;       /* deixa a fonte um pouco menor */
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 .fechar {
@@ -189,32 +191,20 @@ footer {
   color: #fff;
 }
 
-
-
-/* ===== Correção para modais ===== */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999; /* aumenta para garantir que o modal fica por cima */
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-  overflow-y: auto; /* evita corte do conteúdo */
+/* ===== Animações ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.modal-content {
-  position: relative;
-  background-color: #111827;
-  margin: 10vh auto;
-  padding: 25px;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 500px;
-  border: 1px solid rgba(45, 212, 191, 0.4);
-  color: #f8fafc;
-  text-align: left;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
