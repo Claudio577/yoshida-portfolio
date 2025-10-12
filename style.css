@@ -184,3 +184,30 @@ footer {
   color: #fff;
 }
 
+/* ===== Correção para modais ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999; /* aumenta para garantir que o modal fica por cima */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-y: auto; /* evita corte do conteúdo */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #111827;
+  margin: 10vh auto;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  border: 1px solid rgba(45, 212, 191, 0.4);
+  color: #f8fafc;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
