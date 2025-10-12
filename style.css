@@ -126,22 +126,20 @@ header p {
   right: 0;
   width: 400px;
   max-width: 90%;
-  height: 100vh;
+  height: 100%;
   background: #0f172a;
   color: #f8fafc;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.6);
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 6rem; /* o 3º valor adiciona espaço no final */
   transform: translateX(100%);
   transition: transform 0.4s ease;
   z-index: 10001;
   overflow-y: auto;
   border-left: 1px solid rgba(45, 212, 191, 0.3);
-    padding-bottom: 5rem; /* dá espaço extra no final */
-  scrollbar-width: thin; /* deixa a barra de rolagem mais elegante */
-  scrollbar-color: #22d3ee #0f172a; /* cor moderna no tema escuro */
-
+  scrollbar-width: thin;
+  scrollbar-color: #22d3ee #0f172a;
+  overscroll-behavior: contain; /* evita bug de travar no final */
 }
-
 
 .sidebar.aberta {
   transform: translateX(0);
