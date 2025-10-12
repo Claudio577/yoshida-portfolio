@@ -5,6 +5,7 @@ body {
   color: #f8fafc;
   margin: 0;
   text-align: center;
+  overflow-x: hidden;
 }
 
 /* ===== Cabeçalho ===== */
@@ -26,7 +27,7 @@ header p {
   color: #d1fae5;
 }
 
-/* ===== Grade de projetos ===== */
+/* ===== Grade ===== */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -34,7 +35,7 @@ header p {
   padding: 2rem;
 }
 
-/* ===== Cartões de projeto ===== */
+/* ===== Card ===== */
 .card {
   background: #111827;
   border-radius: 18px;
@@ -54,15 +55,7 @@ header p {
   color: #6ee7b7;
 }
 
-/* ===== Rodapé ===== */
-footer {
-  margin-top: 3rem;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #9ca3af;
-}
-
-/* ===== Layout dos botões ===== */
+/* ===== Botões ===== */
 .actions {
   display: flex;
   justify-content: center;
@@ -71,7 +64,6 @@ footer {
   margin-top: 1.2rem;
 }
 
-/* ===== Botão principal (Abrir Projeto) ===== */
 .btn-azul {
   background: linear-gradient(90deg, #0ea5e9, #6d28d9);
   color: #fff;
@@ -91,19 +83,20 @@ footer {
   box-shadow: 0 0 18px rgba(45, 212, 191, 0.6);
 }
 
-/* ===== “Como Usar” ===== */
-.btn-como-usar {
-  background: rgba(16, 185, 129, 0.25);
-  color: #a7f3d0;
-  border: 1px solid rgba(45, 212, 191, 0.4);
-  padding: 10px 16px;
+.btn-como-usar, .btn-tecnologias {
   border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.25s ease;
+  padding: 10px 16px;
 }
 
+.btn-como-usar {
+  background: rgba(16, 185, 129, 0.25);
+  color: #a7f3d0;
+  border: 1px solid rgba(45, 212, 191, 0.4);
+}
 .btn-como-usar:hover {
   background: rgba(16, 185, 129, 0.4);
   color: #fff;
@@ -112,19 +105,11 @@ footer {
   transform: translateY(-2px);
 }
 
-/* ===== “Tecnologias” ===== */
 .btn-tecnologias {
   background: rgba(14, 165, 233, 0.25);
   color: #bae6fd;
   border: 1px solid rgba(56, 189, 248, 0.5);
-  padding: 10px 16px;
-  border-radius: 10px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.25s ease;
 }
-
 .btn-tecnologias:hover {
   background: rgba(14, 165, 233, 0.4);
   color: #fff;
@@ -133,7 +118,7 @@ footer {
   transform: translateY(-2px);
 }
 
-/* ===== Estilos dos MODAIS ===== */
+/* ===== Modal ===== */
 .modal {
   display: none;
   position: fixed;
@@ -143,14 +128,14 @@ footer {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  overflow-y: auto;
-  animation: fadeIn 0.3s ease; /* animação suave ao abrir */
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.25s ease;
 }
 
 .modal-content {
-  position: relative;
   background-color: #111827;
-  margin: 10vh auto;
   padding: 25px;
   border-radius: 12px;
   width: 90%;
@@ -159,17 +144,15 @@ footer {
   color: #f8fafc;
   text-align: left;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  animation: slideIn 0.3s ease;
+  animation: fadeIn 0.3s ease;
 }
 
-.modal-content h2 {
-  color: #22d3ee;
-  margin-top: 0;
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 .chave-api {
-  display: block;
-  overflow-wrap: anywhere;
   background: #1e293b;
   padding: 8px;
   border-radius: 6px;
@@ -177,6 +160,7 @@ footer {
   color: #a7f3d0;
   text-align: center;
   font-size: 0.9rem;
+  margin: 8px 0;
 }
 
 .fechar {
@@ -185,26 +169,18 @@ footer {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  background: none;
+  border: none;
 }
-
 .fechar:hover {
   color: #fff;
 }
 
-/* ===== Animações ===== */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* ===== Rodapé ===== */
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #9ca3af;
 }
 
