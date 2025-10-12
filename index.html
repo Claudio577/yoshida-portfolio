@@ -22,7 +22,14 @@
         <p>Previsão de risco e sinais automáticos do mercado Bitcoin em tempo real.</p>
         <div class="actions">
           <a href="https://btcsinalizadorauto-f4eleggyphbfgabcrunfky.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-          <button class="btn-como-usar" onclick="abrirModal('btcModal')">💡 Como Usar</button>
+          <button class="btn-como-usar" onclick="abrirSidebar(`
+            <h2>💡 Como Usar – BTC Sinalizador Auto</h2>
+            <p>O <strong>BTC Sinalizador Auto</strong> analisa o mercado de Bitcoin em tempo real usando dados da API <strong>CryptoPanic</strong>.</p>
+            <p>Basta inserir a chave gratuita abaixo no campo <strong>API Key</strong> do app:</p>
+            <code>48848ce468bc3871f63aeb8787ccd5905b2a90f3</code>
+            <p>Essa chave é pública e possui <strong>limitações diárias de uso</strong>, ideal para testes e estudos.</p>
+            <a href='https://btcsinalizadorauto-f4eleggyphbfgabcrunfky.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
+          `)">💡 Como Usar</button>
           <button class="btn-tecnologias">⚙️ Tecnologias</button>
         </div>
       </div>
@@ -33,7 +40,11 @@
         <p>Modelo de IA que prevê gravidade de casos veterinários com base em anamnese.</p>
         <div class="actions">
           <a href="https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-          <button class="btn-como-usar" onclick="abrirModal('vetModal')">💡 Como Usar</button>
+          <button class="btn-como-usar" onclick="abrirSidebar(`
+            <h2>💡 Como Usar – ClínicaVet Final</h2>
+            <p>O modelo de IA recebe dados de anamnese veterinária e prevê a gravidade do caso com base em aprendizado de máquina.</p>
+            <p>Basta inserir os dados clínicos e clicar em <strong>Prever Gravidade</strong>.</p>
+          `)">💡 Como Usar</button>
           <button class="btn-tecnologias">⚙️ Tecnologias</button>
         </div>
       </div>
@@ -44,7 +55,10 @@
         <p>Catálogo de filmes Studio Ghibli com busca e visualização dinâmica via API.</p>
         <div class="actions">
           <a href="https://ghibli-app-clean-49wxwh7t5ng2ugyawec5ur.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-          <button class="btn-como-usar" onclick="abrirModal('ghibliModal')">💡 Como Usar</button>
+          <button class="btn-como-usar" onclick="abrirSidebar(`
+            <h2>💡 Como Usar – Ghibli Streamlit Clean</h2>
+            <p>Pesquise filmes do Studio Ghibli pelo nome, veja detalhes e imagens dinâmicas via API pública.</p>
+          `)">💡 Como Usar</button>
           <button class="btn-tecnologias">⚙️ Tecnologias</button>
         </div>
       </div>
@@ -55,7 +69,10 @@
         <p>Simulador antifraude com IA e Blockchain para análise de transações financeiras.</p>
         <div class="actions">
           <a href="https://smartfin-ai-blockchain-scgxhy39vkbvgguhh5cqlr.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-          <button class="btn-como-usar" onclick="abrirModal('smartModal')">💡 Como Usar</button>
+          <button class="btn-como-usar" onclick="abrirSidebar(`
+            <h2>💡 Como Usar – SmartFin AI Blockchain</h2>
+            <p>O sistema simula transações financeiras e usa IA + Blockchain para detectar possíveis fraudes em tempo real.</p>
+          `)">💡 Como Usar</button>
           <button class="btn-tecnologias">⚙️ Tecnologias</button>
         </div>
       </div>
@@ -63,86 +80,32 @@
     </section>
   </main>
 
-  <!-- ===== MODAIS ===== -->
-
-  <!-- Modal BTC -->
-  <div id="btcModal" class="modal">
-    <div class="modal-content animated">
-      <button class="fechar" onclick="fecharModal('btcModal')">&times;</button>
-      <h2>💡 Como Usar – BTC Sinalizador Auto</h2>
-      <p>
-        O <strong>BTC Sinalizador Auto</strong> analisa o mercado de Bitcoin em tempo real usando dados da API
-        <strong>CryptoPanic</strong>.
-      </p>
-
-      <p>Basta inserir a chave gratuita abaixo no campo <strong>API Key</strong> do app:</p>
-      <div class="chave-api">48848ce468bc3871f63aeb8787ccd5905b2a90f3</div>
-      <p>Essa chave é pública e possui <strong>limitações diárias de uso</strong>, ideal para testes e estudos.</p>
-
-      <a href="https://btcsinalizadorauto-f4eleggyphbfgabcrunfky.streamlit.app/" target="_blank" class="btn-azul">
-        🔗 Abrir Aplicação
-      </a>
-    </div>
-  </div>
-
-  <!-- Modal ClínicaVet -->
-  <div id="vetModal" class="modal">
-    <div class="modal-content">
-      <button class="fechar" onclick="fecharModal('vetModal')">&times;</button>
-      <h2>💡 Como Usar – ClínicaVet Final</h2>
-      <p>
-        O modelo de IA recebe dados de anamnese veterinária e prevê a gravidade do caso com base em aprendizado de máquina.
-      </p>
-      <p>Basta inserir os dados clínicos e clicar em <strong>Prever Gravidade</strong>.</p>
-    </div>
-  </div>
-
-  <!-- Modal Ghibli -->
-  <div id="ghibliModal" class="modal">
-    <div class="modal-content">
-      <button class="fechar" onclick="fecharModal('ghibliModal')">&times;</button>
-      <h2>💡 Como Usar – Ghibli Streamlit Clean</h2>
-      <p>Pesquise filmes do Studio Ghibli pelo nome, veja detalhes e imagens dinâmicas via API pública.</p>
-    </div>
-  </div>
-
-  <!-- Modal SmartFin -->
-  <div id="smartModal" class="modal">
-    <div class="modal-content">
-      <button class="fechar" onclick="fecharModal('smartModal')">&times;</button>
-      <h2>💡 Como Usar – SmartFin AI Blockchain</h2>
-      <p>O sistema simula transações financeiras e usa IA + Blockchain para detectar possíveis fraudes em tempo real.</p>
-    </div>
-  </div>
-
   <footer>
     <p>© 2025 Claudio Portfólio · IA e Blockchain • Desenvolvido por Claudio Hideki Yoshida</p>
   </footer>
 
+  <!-- ===== Sidebar Explicação ===== -->
+  <div id="sidebar" class="sidebar">
+    <button class="fechar-sidebar" onclick="fecharSidebar()">×</button>
+    <div id="sidebar-content"></div>
+  </div>
+
   <!-- ===== JS ===== -->
   <script>
-    function abrirModal(id) {
-      const modal = document.getElementById(id);
-      modal.style.display = "flex";
-      document.body.style.overflow = "hidden"; // impede scroll do fundo
+    function abrirSidebar(conteudo) {
+      const sidebar = document.getElementById("sidebar");
+      const content = document.getElementById("sidebar-content");
+      content.innerHTML = conteudo;
+      sidebar.classList.add("aberta");
+      document.body.style.overflow = "hidden";
     }
 
-    function fecharModal(id) {
-      const modal = document.getElementById(id);
-      modal.style.display = "none";
-      document.body.style.overflow = "auto"; // restaura scroll
-    }
-
-    // Fecha o modal se clicar fora do conteúdo
-    window.onclick = function(event) {
-      const modais = document.querySelectorAll('.modal');
-      modais.forEach(modal => {
-        if (event.target === modal) {
-          modal.style.display = "none";
-          document.body.style.overflow = "auto";
-        }
-      });
+    function fecharSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.remove("aberta");
+      document.body.style.overflow = "auto";
     }
   </script>
 </body>
 </html>
+
