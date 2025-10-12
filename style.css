@@ -1,7 +1,7 @@
 /* ===== Estilo geral ===== */
 body {
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top, #0f172a, #020617);
+  background: radial-gradient(circle at top, #020617, #0f172a);
   color: #f8fafc;
   margin: 0;
   text-align: center;
@@ -10,19 +10,20 @@ body {
 /* ===== Cabeçalho ===== */
 header {
   padding: 3rem 1rem;
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #c084fc);
+  background: linear-gradient(90deg, #0f172a, #6d28d9, #10b981);
   color: white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
 }
 
 header h1 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   margin: 0;
+  letter-spacing: 0.5px;
 }
 
 header p {
   font-size: 1.1rem;
-  color: #e2e8f0;
+  color: #d1fae5;
 }
 
 /* ===== Grade de projetos ===== */
@@ -35,25 +36,22 @@ header p {
 
 /* ===== Cartões de projeto ===== */
 .card {
-  background: #1e293b;
-  border-radius: 16px;
+  background: #111827;
+  border-radius: 18px;
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(45, 212, 191, 0.1);
 }
 
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
+  box-shadow: 0 6px 22px rgba(16, 185, 129, 0.4);
+  border-color: rgba(45, 212, 191, 0.25);
 }
 
 .card h2 {
-  color: #a5b4fc;
+  color: #6ee7b7;
 }
 
 /* ===== Rodapé ===== */
@@ -61,7 +59,7 @@ footer {
   margin-top: 3rem;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: #9ca3af;
 }
 
 /* ===== Layout dos botões ===== */
@@ -73,33 +71,33 @@ footer {
   margin-top: 1.2rem;
 }
 
-/* ===== Botão principal (Abrir Projeto) — Azul/Lilás vibrante ===== */
+/* ===== Botão principal (Abrir Projeto) — Ciano + Violeta ===== */
 .btn-azul {
-  background: linear-gradient(90deg, #6366f1, #8b5cf6, #a78bfa);
+  background: linear-gradient(90deg, #0ea5e9, #6d28d9);
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 10px 22px;
+  border-radius: 10px;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   text-decoration: none;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.5);
 }
 
 .btn-azul:hover {
-  background: linear-gradient(90deg, #4f46e5, #7c3aed, #c084fc);
+  background: linear-gradient(90deg, #22d3ee, #7c3aed);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.55);
+  box-shadow: 0 0 18px rgba(45, 212, 191, 0.6);
 }
 
-/* ===== Botão “Como Usar” — Lilás claro translúcido ===== */
+/* ===== “Como Usar” — Verde Neon Translúcido ===== */
 .btn-como-usar {
-  background: rgba(139, 92, 246, 0.25);
-  color: #ddd6fe;
-  border: 1px solid rgba(167, 139, 250, 0.5);
+  background: rgba(16, 185, 129, 0.25);
+  color: #a7f3d0;
+  border: 1px solid rgba(45, 212, 191, 0.4);
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -107,20 +105,20 @@ footer {
 }
 
 .btn-como-usar:hover {
-  background: rgba(167, 139, 250, 0.35);
+  background: rgba(16, 185, 129, 0.4);
   color: #fff;
-  border-color: rgba(216, 180, 254, 0.8);
-  box-shadow: 0 0 12px rgba(192, 132, 252, 0.6);
+  border-color: rgba(45, 212, 191, 0.6);
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.6);
   transform: translateY(-2px);
 }
 
-/* ===== Botão “Tecnologias” — Azul suave translúcido ===== */
+/* ===== “Tecnologias” — Azul Ciano Translúcido ===== */
 .btn-tecnologias {
-  background: rgba(59, 130, 246, 0.25);
-  color: #bfdbfe;
-  border: 1px solid rgba(147, 197, 253, 0.5);
+  background: rgba(14, 165, 233, 0.25);
+  color: #bae6fd;
+  border: 1px solid rgba(56, 189, 248, 0.5);
   padding: 10px 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -128,9 +126,9 @@ footer {
 }
 
 .btn-tecnologias:hover {
-  background: rgba(96, 165, 250, 0.35);
+  background: rgba(14, 165, 233, 0.4);
   color: #fff;
-  border-color: rgba(147, 197, 253, 0.8);
-  box-shadow: 0 0 12px rgba(147, 197, 253, 0.6);
+  border-color: rgba(125, 211, 252, 0.8);
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.6);
   transform: translateY(-2px);
 }
