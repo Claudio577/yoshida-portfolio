@@ -126,7 +126,8 @@ header p {
   right: 0;
   width: 400px;
   max-width: 90%;
-  height: 100dvh; /* altura dinâmica que respeita viewport real */
+  height: 100vh; /* fallback para navegadores antigos */
+  height: 100dvh; /* altura dinâmica (preferida) */
   background: #0f172a;
   color: #f8fafc;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.6);
@@ -141,6 +142,7 @@ header p {
   overscroll-behavior: contain;
   will-change: transform;
 }
+
 
 
 
