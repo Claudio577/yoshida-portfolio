@@ -92,7 +92,7 @@ footer {
   box-shadow: 0 6px 14px rgba(37, 99, 235, 0.45);
 }
 
-/* ===== Botão secundário padrão ===== */
+/* ===== Botão secundário padrão (cinza translúcido) ===== */
 .btn-cinza {
   background: rgba(255, 255, 255, 0.06);
   color: #cbd5e1;
@@ -151,3 +151,4 @@ footer {
   border-color: rgba(134, 239, 172, 0.6);
   transform: translateY(-2px);
 }
+
