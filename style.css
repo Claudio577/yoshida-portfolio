@@ -126,12 +126,12 @@ header p {
   right: 0;
   width: 400px;
   max-width: 90%;
-  height: 100vh;
+  height: 100dvh; /* altura dinâmica que respeita viewport real */
   background: #0f172a;
   color: #f8fafc;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.6);
-  padding: 3.5rem 1.5rem 6rem; /* topo + laterais + espaço no final */
-  transform: translateX(100%); /* começa fora da tela (fechada) */
+  padding: 3.5rem 1.5rem 7rem; /* + espaço inferior visível */
+  transform: translateX(100%);
   transition: transform 0.4s ease;
   z-index: 10001;
   overflow-y: auto;
@@ -139,7 +139,9 @@ header p {
   scrollbar-width: thin;
   scrollbar-color: #22d3ee #0f172a;
   overscroll-behavior: contain;
+  will-change: transform;
 }
+
 
 
 .sidebar.aberta {
