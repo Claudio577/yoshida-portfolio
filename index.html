@@ -160,54 +160,59 @@
 </div>
 
 
-    <!-- Projeto 4 -->
+   <!-- Projeto 4 -->
 <div class="card">
   <h2>💰 SmartFin AI Blockchain</h2>
   <p>Simulador antifraude com IA e Blockchain para análise de transações financeiras.</p>
   <div class="actions">
     <a href="https://smartfin-ai-blockchain-scgxhy39vkbvgguhh5cqlr.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
+
+    <!-- Botão COMO USAR -->
     <button class="btn-como-usar" onclick="abrirSidebar(`
       <h2>💡 Como Usar – SmartFin AI Blockchain</h2>
       <p>O <strong>SmartFin AI Blockchain</strong> é uma simulação de <strong>fintech antifraude</strong> que combina <strong>Inteligência Artificial</strong> e <strong>Blockchain</strong> para análise e validação de transações financeiras.</p>
+
       <p>O app exibe um painel de monitoramento que mostra o status da API e os dados processados pela IA em tempo real.</p>
 
       <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
         <li>🌐 Testa a conectividade com o backend hospedado no <strong>Render</strong>.</li>
-        <li>📋 Exibe as transações analisadas pela IA e marca as <strong>suspeitas de fraude</strong>.</li>
-        <li>💬 Um <strong>chatbot explicativo</strong> descreve os motivos da classificação de risco.</li>
-        <li>📈 Atribui uma <strong>pontuação de risco</strong> com base em valores, horários e padrões.</li>
-        <li>🔗 A <strong>Blockchain simulada</strong> gera assinaturas digitais (hash SHA-256) e blocos validados na “SmartFinChain”.</li>
-        <li>📜 O usuário pode registrar blocos no <strong>Ledger público</strong> (simulado) e ver o histórico completo.</li>
+        <li>📋 Exibe as transações analisadas pela IA e indica quais são <strong>suspeitas de fraude</strong>.</li>
+        <li>💬 Um <strong>chatbot explicativo</strong> descreve em linguagem natural os motivos da classificação de risco.</li>
+        <li>📈 O sistema atribui uma <strong>pontuação de risco</strong> (baixa, média ou alta) com base em valores, horários e padrões de transação.</li>
+        <li>🔗 O módulo de <strong>Blockchain simulada</strong> gera assinaturas digitais (hash SHA-256) e blocos validados na “SmartFinChain”.</li>
+        <li>📜 O usuário pode registrar os blocos no <strong>Ledger público</strong> (também simulado) e visualizar o histórico completo.</li>
       </ul>
 
       <div style='background:#1e293b; padding:12px 14px; border-left:4px solid #facc15; border-radius:6px; margin-top:15px; text-align:left;'>
-        ⚠️ <strong>Atenção:</strong> o backend está hospedado na plataforma <strong>Render (plano gratuito)</strong>.<br>
+        ⚠️ <strong>Atenção:</strong> o backend deste projeto está hospedado na plataforma <strong>Render (plano gratuito)</strong>.<br>
         Por ser uma versão free, o servidor entra em modo de hibernação após alguns minutos sem uso e pode demorar <strong>30 a 60 segundos</strong> para reativar.<br><br>
-        🌀 Se o sistema aparecer como <strong>"Offline"</strong>, basta <strong>atualizar a página</strong> e aguardar até que o servidor acorde novamente.
+        🌀 Se o sistema aparecer como <strong>"Offline"</strong>, basta <strong>atualizar a página</strong> e aguardar alguns segundos até que o servidor acorde novamente.
       </div>
 
       <p style='margin-top:18px;'>O objetivo é demonstrar, de forma interativa, como <strong>IA + Blockchain</strong> podem atuar juntas na prevenção de fraudes financeiras. 🧠💳</p>
       <a href='https://smartfin-ai-blockchain-scgxhy39vkbvgguhh5cqlr.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
     `)">💡 Como Usar</button>
 
+    <!-- Botão TECNOLOGIAS -->
     <button class="btn-tecnologias" onclick="abrirSidebar(`
       <h2>⚙️ Tecnologias – SmartFin AI Blockchain</h2>
       <p>O <strong>SmartFin AI Blockchain</strong> foi desenvolvido para demonstrar a integração entre <strong>Inteligência Artificial</strong> e <strong>Blockchain</strong> em um ambiente financeiro simulado.</p>
 
       <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
         <li>🐍 <strong>Python</strong> — linguagem base do projeto.</li>
-        <li>🧩 <strong>Streamlit</strong> — interface interativa conectada ao backend.</li>
-        <li>⚡ <strong>FastAPI</strong> — backend hospedado no <strong>Render</strong>, processando as análises de risco.</li>
-        <li>📊 <strong>Pandas</strong> — tratamento e visualização dos dados financeiros.</li>
-        <li>🧠 <strong>Scikit-learn</strong> e <strong>PyOD</strong> — modelagem e detecção de anomalias.</li>
-        <li>🔒 <strong>Hashlib (SHA-256)</strong> — geração de assinaturas digitais únicas por transação.</li>
-        <li>💾 <strong>Ledger CSV</strong> — registro local dos blocos simulando um livro público descentralizado.</li>
+        <li>🧩 <strong>Streamlit</strong> — interface interativa que conecta o backend de IA ao frontend do usuário.</li>
+        <li>⚡ <strong>FastAPI</strong> — backend hospedado no <strong>Render</strong>, responsável pelo processamento das transações e análise de risco.</li>
+        <li>📊 <strong>Pandas</strong> — tratamento, manipulação e exibição dos dados financeiros.</li>
+        <li>🧠 <strong>Scikit-learn</strong> e <strong>PyOD</strong> — bibliotecas de aprendizado de máquina usadas para modelagem e detecção de anomalias.</li>
+        <li>🔒 <strong>Hashlib (SHA-256)</strong> — geração de assinaturas digitais únicas para cada transação, simulando a segurança da blockchain.</li>
+        <li>💾 <strong>Ledger CSV</strong> — armazenamento local dos blocos validados, simulando um livro público descentralizado.</li>
       </ul>
 
-      <p>Essa arquitetura une IA, backend em nuvem e simulação de blockchain, criando um modelo prático e didático de aplicação em fintechs modernas. 💹🔗</p>
+      <p>Essa arquitetura une IA, backend em nuvem e simulação de blockchain, oferecendo um modelo prático e didático de aplicação em fintechs modernas. 💹🔗</p>
     `)">⚙️ Tecnologias</button>
   </div>
 </div>
+
 
 
     </section>
