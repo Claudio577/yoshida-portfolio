@@ -30,7 +30,31 @@
             <p>Essa chave é pública e possui <strong>limitações diárias de uso</strong>, ideal para testes e estudos.</p>
             <a href='https://btcsinalizadorauto-f4eleggyphbfgabcrunfky.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
           `)">💡 Como Usar</button>
-          <button class="btn-tecnologias">⚙️ Tecnologias</button>
+          <button class="btn-tecnologias" onclick="abrirSidebar(`
+  <h2>⚙️ Tecnologias – BTC Sinalizador Auto</h2>
+  <p>Projeto desenvolvido em <strong>Python</strong> com o framework <strong>Streamlit</strong>, integrando análise de dados, APIs externas e lógica de IA para avaliação do risco de mercado do Bitcoin em tempo real.</p>
+
+  <ul>
+    <li>🧠 <strong>IA & Machine Learning:</strong> modelo baseado em <em>análise de sentimentos heurística</em> — utiliza palavras-chave positivas e negativas em notícias do <strong>CryptoPanic</strong> para estimar o humor do mercado. Essa abordagem é uma forma de <em>IA simbólica</em> (regras linguísticas), sem necessidade de treino supervisionado.</li>
+    <li>📊 <strong>Classificação de Risco:</strong> combinação estatística entre sentimento médio, volatilidade e volume de notícias para gerar níveis de risco (🔴🟡🟢).</li>
+    <li>📡 <strong>APIs Externas:</strong> 
+      <ul>
+        <li><strong>CryptoPanic API</strong> – coleta de manchetes e notícias cripto.</li>
+        <li><strong>CoinGecko API</strong> – cálculo da volatilidade e tendência de preço do Bitcoin.</li>
+      </ul>
+    </li>
+    <li>💾 <strong>Pandas e NumPy</strong> — tratamento, agregação e cálculo de métricas numéricas.</li>
+    <li>🖼️ <strong>Pillow (PIL)</strong> — exibição dinâmica das imagens do semáforo de risco.</li>
+    <li>📈 <strong>Matplotlib</strong> — geração de gráficos históricos e visualização da tendência dos sinais.</li>
+    <li>🔁 <strong>streamlit-autorefresh</strong> — atualização automática da interface a cada 60 segundos.</li>
+    <li>📂 <strong>Histórico local</strong> — armazenamento contínuo dos sinais em <code>sinais.csv</code> para análise temporal.</li>
+  </ul>
+
+  <p>⚙️ O algoritmo aplica uma <strong>IA leve e interpretável</strong>, combinando técnicas de <em>sentiment analysis</em> com estatística descritiva e regras de decisão para estimar riscos do mercado em tempo real.</p>
+
+  <p>🚀 Resultado: um painel interativo, rápido e educativo — ideal para demonstrações de IA aplicada a dados financeiros e monitoramento do Bitcoin.</p>
+`)">⚙️ Tecnologias</button>
+
         </div>
       </div>
 
