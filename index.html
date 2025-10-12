@@ -109,17 +109,36 @@
         <p>Catálogo de filmes do Studio Ghibli com busca e visualização via API.</p>
         <div class="actions">
           <a href="https://ghibli-app-clean-49wxwh7t5ng2ugyawec5ur.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-          <button class="btn-como-usar" onclick="abrirSidebar(`
-            <h2>💡 Como Usar – Ghibli Streamlit Clean</h2>
-            <p>App interativo que conecta à <strong>API pública do Studio Ghibli</strong> para exibir filmes e personagens.</p>
-            <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
-              <li>🎞️ Escolha o tipo de dado (films, people, locations...)</li>
-              <li>🔍 Digite parte do nome no campo de busca.</li>
-              <li>📋 Veja os resultados em JSON diretamente na tela.</li>
-            </ul>
-            <p>Exploração visual e educativa do universo Studio Ghibli. 🌸</p>
-            <a href='https://ghibli-app-clean-49wxwh7t5ng2ugyawec5ur.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
-          `)">💡 Como Usar</button>
+         <button class="btn-como-usar" onclick="abrirSidebar(`
+  <h2>💡 Como Usar – Ghibli Streamlit Clean</h2>
+  <p>O <strong>Ghibli Streamlit Clean</strong> é um app interativo que consome a <strong>API pública do Studio Ghibli</strong> e exibe informações sobre filmes, personagens e locais icônicos do estúdio japonês.</p>
+
+  <p>Para explorar:</p>
+  <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
+    <li>🎞️ Escolha o tipo de dado que deseja visualizar:
+      <ul style='margin-top:6px; margin-bottom:6px; padding-left:18px; list-style-type:circle;'>
+        <li><strong>Films</strong> – catálogo completo de filmes;</li>
+        <li><strong>People</strong> – personagens;</li>
+        <li><strong>Species</strong> – espécies e raças do universo Ghibli;</li>
+        <li><strong>Locations</strong> – lugares das animações;</li>
+        <li><strong>Vehicles</strong> – transportes e máquinas.</li>
+      </ul>
+    </li>
+    <li>🔍 Digite parte do nome no campo de busca.</li>
+    <li>📋 O sistema retornará os resultados com detalhes completos em formato JSON.</li>
+  </ul>
+
+  <h3 style='margin-top:20px;'>🎯 Exemplos de Busca</h3>
+  <div style='background:#1e293b; padding:12px 14px; border-left:4px solid #38bdf8; border-radius:6px; margin-top:10px; text-align:left;'>
+    <p><strong>1️⃣ Totoro</strong> → Filme: <em>My Neighbor Totoro (1988)</em></p>
+    <p><strong>2️⃣ Spirited</strong> → Filme: <em>Spirited Away (A Viagem de Chihiro)</em></p>
+    <p><strong>3️⃣ Howl</strong> → Filme: <em>Howl’s Moving Castle (O Castelo Animado)</em></p>
+  </div>
+
+  <p style='margin-top:15px;'>Uma forma divertida e educativa de explorar o universo Ghibli e aprender sobre consumo de APIs REST com Python. 🌸</p>
+  <a href='https://ghibli-app-clean-49wxwh7t5ng2ugyawec5ur.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
+`)">💡 Como Usar</button>
+
           <button class="btn-tecnologias" onclick="abrirSidebar(`
             <h2>⚙️ Tecnologias – Ghibli Streamlit Clean</h2>
             <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
