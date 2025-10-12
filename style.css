@@ -136,7 +136,12 @@ header p {
   z-index: 10001;
   overflow-y: auto;
   border-left: 1px solid rgba(45, 212, 191, 0.3);
+    padding-bottom: 5rem; /* dá espaço extra no final */
+  scrollbar-width: thin; /* deixa a barra de rolagem mais elegante */
+  scrollbar-color: #22d3ee #0f172a; /* cor moderna no tema escuro */
+
 }
+
 
 .sidebar.aberta {
   transform: translateX(0);
