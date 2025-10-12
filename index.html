@@ -59,19 +59,54 @@
       </div>
 
       <!-- Projeto 2 -->
-      <div class="card">
-        <h2>🐶 ClínicaVet Final</h2>
-        <p>Modelo de IA que prevê gravidade de casos veterinários com base em anamnese.</p>
-        <div class="actions">
-          <a href="https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-          <button class="btn-como-usar" onclick="abrirSidebar(`
-            <h2>💡 Como Usar – ClínicaVet Final</h2>
-            <p>O modelo de IA recebe dados de anamnese veterinária e prevê a gravidade do caso com base em aprendizado de máquina.</p>
-            <p>Basta inserir os dados clínicos e clicar em <strong>Prever Gravidade</strong>.</p>
-          `)">💡 Como Usar</button>
-          <button class="btn-tecnologias">⚙️ Tecnologias</button>
-        </div>
-      </div>
+<div class="card">
+  <h2>🐶 ClínicaVet Final</h2>
+  <p>Modelo de IA que prevê gravidade de casos veterinários com base em anamnese.</p>
+  <div class="actions">
+    <a href="https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
+
+    <!-- Botão COMO USAR -->
+    <button class="btn-como-usar" onclick="abrirSidebar(`
+      <h2>💡 Como Usar – ClínicaVet Final</h2>
+      <p>O <strong>ClínicaVet Final</strong> é um sistema de <strong>inteligência artificial</strong> voltado à análise de anamnese veterinária, auxiliando na decisão clínica sobre casos caninos.</p>
+      <p>Para utilizar:</p>
+      <ul>
+        <li>✍️ Insira a <strong>anamnese</strong> do paciente — descreva sintomas, idade, peso, temperatura, apetite e mobilidade.</li>
+        <li>🔍 Clique em <strong>Analisar</strong> para que o modelo processe as informações.</li>
+        <li>📊 O sistema exibirá as previsões:</li>
+        <ul>
+          <li>🏥 Necessidade de internação</li>
+          <li>📅 Estimativa de dias internado</li>
+          <li>☠️ Probabilidade de eutanásia</li>
+          <li>💊 Possibilidade de alta ou tratamento</li>
+        </ul>
+      </ul>
+      <p>O objetivo é apoiar o médico-veterinário na triagem de casos, detectando riscos críticos com base em dados reais e simulados. 🚑</p>
+      <a href='https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
+    `)">💡 Como Usar</button>
+
+    <!-- Botão TECNOLOGIAS -->
+    <button class="btn-tecnologias" onclick="abrirSidebar(`
+      <h2>⚙️ Tecnologias – ClínicaVet Final</h2>
+      <p>O <strong>ClínicaVet Final</strong> combina técnicas de <strong>Machine Learning</strong> e <strong>Processamento de Linguagem Natural</strong> para analisar descrições clínicas em texto livre.</p>
+      <ul>
+        <li>🐍 <strong>Python</strong> — linguagem principal do projeto.</li>
+        <li>📊 <strong>Pandas e NumPy</strong> — tratamento e limpeza dos dados clínicos.</li>
+        <li>🧠 <strong>Scikit-learn</strong> — uso de modelos <em>Random Forest</em> para prever:
+          <ul>
+            <li>internação,</li>
+            <li>probabilidade de eutanásia,</li>
+            <li>e tempo estimado de internação.</li>
+          </ul>
+        </li>
+        <li>🧩 <strong>Streamlit</strong> — interface web interativa para entrada de anamnese e exibição dos resultados.</li>
+        <li>🔡 <strong>Regex e Unicodedata</strong> — normalização de texto e extração de informações clínicas.</li>
+      </ul>
+      <p>Essa integração cria uma ferramenta acessível e educativa, demonstrando a aplicação prática da IA em contextos de saúde animal. 🐕‍🦺</p>
+    `)">⚙️ Tecnologias</button>
+  </div>
+</div>
+
 
       <!-- Projeto 3 -->
       <div class="card">
