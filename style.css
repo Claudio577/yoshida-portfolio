@@ -122,24 +122,24 @@ header p {
 /* ===== Sidebar Explicação ===== */
 .sidebar {
   position: fixed;
-  top: 0;
+  inset: 0; /* ocupa toda a altura e largura da lateral direita */
   right: 0;
   width: 400px;
   max-width: 90%;
-  height: 100%;
   background: #0f172a;
   color: #f8fafc;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.6);
-  padding: 2rem 1.5rem 6rem; /* o 3º valor adiciona espaço no final */
+  padding: 3.5rem 1.5rem 6rem; /* topo + laterais + espaço no final */
   transform: translateX(100%);
   transition: transform 0.4s ease;
   z-index: 10001;
-  overflow-y: auto;
+  overflow-y: scroll; /* força a rolagem completa */
   border-left: 1px solid rgba(45, 212, 191, 0.3);
   scrollbar-width: thin;
   scrollbar-color: #22d3ee #0f172a;
-  overscroll-behavior: contain; /* evita bug de travar no final */
+  overscroll-behavior: contain;
 }
+
 
 .sidebar.aberta {
   transform: translateX(0);
