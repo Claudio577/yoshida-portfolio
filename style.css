@@ -123,22 +123,23 @@ header p {
 .sidebar {
   position: fixed;
   top: 0;
-  right: -400px;
+  right: 0;
   width: 400px;
   max-width: 90%;
   height: 100vh;
   background: #0f172a;
   color: #f8fafc;
-  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.6);
   padding: 2rem 1.5rem;
-  transition: right 0.4s ease;
-  z-index: 9999;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  z-index: 10001;
   overflow-y: auto;
   border-left: 1px solid rgba(45, 212, 191, 0.3);
 }
 
 .sidebar.aberta {
-  right: 0;
+  transform: translateX(0);
 }
 
 .fechar-sidebar {
@@ -174,6 +175,25 @@ header p {
   padding: 5px 8px;
   border-radius: 6px;
   font-family: monospace;
+}
+
+/* ===== Fundo escurecido (overlay) ===== */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 10000;
+}
+
+.overlay.visivel {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /* ===== Rodapé ===== */
