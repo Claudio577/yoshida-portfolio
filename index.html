@@ -33,7 +33,6 @@
           <button class="btn-tecnologias" onclick="abrirSidebar(`
             <h2>⚙️ Tecnologias – AI MarketPulse</h2>
             <p>Projeto desenvolvido em <strong>Python</strong> com o framework <strong>Streamlit</strong>, integrando análise de dados, APIs externas e lógica de IA para avaliação do risco de mercado do Bitcoin em tempo real.</p>
-
             <ul>
               <li>🧠 <strong>IA & Machine Learning:</strong> análise de sentimentos heurística — utiliza palavras-chave positivas e negativas em notícias do <strong>CryptoPanic</strong> para estimar o humor do mercado.</li>
               <li>📊 <strong>Classificação de Risco:</strong> combinação estatística entre sentimento médio, volatilidade e volume de notícias para gerar níveis de risco (🔴🟡🟢).</li>
@@ -43,65 +42,59 @@
               <li>📈 <strong>Matplotlib</strong> — geração de gráficos históricos.</li>
               <li>🔁 <strong>streamlit-autorefresh</strong> — atualização automática a cada 60 segundos.</li>
             </ul>
-
             <p>🚀 Um painel interativo, rápido e educativo — ideal para demonstrações de IA aplicada ao mercado financeiro.</p>
           `)">⚙️ Tecnologias</button>
         </div>
       </div>
 
-    <!-- Projeto 2 -->
-<div class="card">
-  <h2>🐶 AnimalIA</h2>
-  <p>Modelo de IA que prevê gravidade de casos veterinários com base em anamnese.</p>
-  <div class="actions">
-    <a href="https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-    <button class="btn-como-usar" onclick="abrirSidebar(`
-      <h2>💡 Como Usar – AnimalIA</h2>
-      <p>O <strong>AnimalIA/strong é um sistema inteligente que avalia anamneses veterinárias e prevê a gravidade do caso, auxiliando o profissional na triagem clínica.</p>
+      <!-- Projeto 2 -->
+      <div class="card">
+        <h2>🐶 AnimalIA</h2>
+        <p>Modelo de IA que prevê gravidade de casos veterinários com base em anamnese.</p>
+        <div class="actions">
+          <a href="https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
+          <button class="btn-como-usar" onclick="abrirSidebar(`
+            <h2>💡 Como Usar – AnimalIA</h2>
+            <p>O <strong>AnimalIA</strong> é um sistema inteligente que avalia anamneses veterinárias e prevê a gravidade do caso, auxiliando o profissional na triagem clínica.</p>
+            <p>Para utilizar:</p>
+            <ul>
+              <li>✍️ Insira uma anamnese real ou resumida (idade, sintomas, temperatura etc.).</li>
+              <li>🔍 Clique em <strong>Analisar</strong> para o sistema processar o texto.</li>
+              <li>📊 O modelo exibirá previsões como:</li>
+              <ul>
+                <li>🏥 Necessidade de internação</li>
+                <li>☠️ Probabilidade de eutanásia</li>
+                <li>📅 Estimativa de dias internado</li>
+                <li>💊 Possibilidade de alta</li>
+              </ul>
+            </ul>
+            <h3 style='margin-top:20px;'>📋 Exemplos de Anamnese para Teste</h3>
+            <div style='background:#1e293b; padding:12px 14px; border-left:4px solid #38bdf8; border-radius:6px; margin-top:10px; text-align:left;'>
+              <p><strong>1️⃣ Caso leve – gastroenterite:</strong><br>
+              Cachorro macho, 3 anos, 10 kg. Está com diarreia leve há dois dias, mas ainda come e bebe água normalmente.</p>
+              <p><strong>2️⃣ Caso moderado – parvovirose:</strong><br>
+              Filhote macho de 4 meses, 6 kg, com vômitos e diarreia com sangue há dois dias. Não come, está fraco e desidratado.</p>
+              <p><strong>3️⃣ Caso grave – insuficiência renal:</strong><br>
+              Cão idoso, 12 anos, 18 kg. Apático, sem apetite, não urina há 24h, hálito amoniacal, mucosas pálidas.</p>
+            </div>
+            <p style='margin-top:15px;'>Esses exemplos cobrem diferentes níveis de gravidade e ajudam a visualizar o funcionamento da IA. 🧠🐾</p>
+            <a href='https://clinicavetfinal-halh3ucyh4gxryc.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
+          `)">💡 Como Usar</button>
 
-      <p>Para utilizar:</p>
-      <ul>
-        <li>✍️ Insira uma anamnese real ou resumida (idade, sintomas, temperatura etc.).</li>
-        <li>🔍 Clique em <strong>Analisar</strong> para o sistema processar o texto.</li>
-        <li>📊 O modelo exibirá previsões como:</li>
-        <ul>
-          <li>🏥 Necessidade de internação</li>
-          <li>☠️ Probabilidade de eutanásia</li>
-          <li>📅 Estimativa de dias internado</li>
-          <li>💊 Possibilidade de alta</li>
-        </ul>
-      </ul>
-
-      <h3 style='margin-top:20px;'>📋 Exemplos de Anamnese para Teste</h3>
-      <div style='background:#1e293b; padding:12px 14px; border-left:4px solid #38bdf8; border-radius:6px; margin-top:10px; text-align:left;'>
-        <p><strong>1️⃣ Caso leve – gastroenterite:</strong><br>
-        Cachorro macho, 3 anos, 10 kg. Está com diarreia leve há dois dias, mas ainda come e bebe água normalmente. Temperatura 38,3 °C. Apetite normal, anda normalmente, sem sinais de dor. Fezes um pouco amolecidas, sem sangue.</p>
-
-        <p><strong>2️⃣ Caso moderado – parvovirose:</strong><br>
-        Filhote macho de 4 meses, 6 kg, com vômitos e diarreia com sangue há dois dias. Não come, está fraco e desidratado. Temperatura 39,6 °C. Mucosas pálidas. Suspeita de parvovirose.</p>
-
-        <p><strong>3️⃣ Caso grave – insuficiência renal:</strong><br>
-        Cão idoso, 12 anos, 18 kg. Apático, sem apetite, não urina há 24h, hálito amoniacal, mucosas pálidas. Temperatura 37,9 °C. Suspeita de insuficiência renal crônica terminal.</p>
+          <button class="btn-tecnologias" onclick="abrirSidebar(`
+            <h2>⚙️ Tecnologias – AnimalIA</h2>
+            <p>O <strong>AnimalIA</strong> combina técnicas de <strong>Machine Learning</strong> e <strong>Processamento de Linguagem Natural</strong> (NLP) para interpretar texto clínico e prever gravidade de casos.</p>
+            <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
+              <li>🐍 <strong>Python</strong></li>
+              <li>📊 <strong>Pandas e NumPy</strong></li>
+              <li>🧠 <strong>Scikit-learn</strong> — modelo Random Forest</li>
+              <li>🧩 <strong>Streamlit</strong> — interface web interativa</li>
+              <li>🔡 <strong>Regex</strong> e <strong>Unicodedata</strong> — limpeza de texto</li>
+            </ul>
+            <p>Ferramenta educativa e acessível que demonstra o uso de IA na análise veterinária. 🐕‍🦺</p>
+          `)">⚙️ Tecnologias</button>
+        </div>
       </div>
-
-      <p style='margin-top:15px;'>Esses exemplos cobrem diferentes níveis de gravidade e ajudam a visualizar o funcionamento da IA. 🧠🐾</p>
-      <a href='https://clinicavetfinal-halh3ucyh4gxjwrkgcxryc.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
-    `)">💡 Como Usar</button>
-
-    <button class="btn-tecnologias" onclick="abrirSidebar(`
-      <h2>⚙️ Tecnologias – AnimalIA</h2>
-      <p>O <strong>AnimalIA</strong> combina técnicas de <strong>Machine Learning</strong> e <strong>Processamento de Linguagem Natural</strong> (NLP) para interpretar texto clínico e prever gravidade de casos.</p>
-      <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
-        <li>🐍 <strong>Python</strong> — linguagem principal.</li>
-        <li>📊 <strong>Pandas e NumPy</strong> — pré-processamento de dados clínicos.</li>
-        <li>🧠 <strong>Scikit-learn</strong> — modelo <em>Random Forest</em> para previsão.</li>
-        <li>🧩 <strong>Streamlit</strong> — interface web interativa.</li>
-        <li>🔡 <strong>Regex</strong> e <strong>Unicodedata</strong> — extração e limpeza de texto.</li>
-      </ul>
-      <p>Ferramenta educativa e acessível que demonstra o uso de IA na análise veterinária. 🐕‍🦺</p>
-    `)">⚙️ Tecnologias</button>
-  </div>
-</div>
 
       <!-- Projeto 3 -->
       <div class="card">
@@ -109,45 +102,25 @@
         <p>Catálogo de filmes do Studio Ghibli com busca e visualização via API.</p>
         <div class="actions">
           <a href="https://ghibli-app-clean-49wxwh7t5ng2ugyawec5ur.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-         <button class="btn-como-usar" onclick="abrirSidebar(`
-  <h2>💡 Como Usar – Ghibli Streamlit Clean</h2>
-  <p>O <strong>Ghibli Streamlit Clean</strong> é um app interativo que consome a <strong>API pública do Studio Ghibli</strong> e exibe informações sobre filmes, personagens e locais icônicos do estúdio japonês.</p>
-
-  <p>Para explorar:</p>
-  <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
-    <li>🎞️ Escolha o tipo de dado que deseja visualizar:
-      <ul style='margin-top:6px; margin-bottom:6px; padding-left:18px; list-style-type:circle;'>
-        <li><strong>Films</strong> – catálogo completo de filmes;</li>
-        <li><strong>People</strong> – personagens;</li>
-        <li><strong>Species</strong> – espécies e raças do universo Ghibli;</li>
-        <li><strong>Locations</strong> – lugares das animações;</li>
-        <li><strong>Vehicles</strong> – transportes e máquinas.</li>
-      </ul>
-    </li>
-    <li>🔍 Digite parte do nome no campo de busca.</li>
-    <li>📋 O sistema retornará os resultados com detalhes completos em formato JSON.</li>
-  </ul>
-
-  <h3 style='margin-top:20px;'>🎯 Exemplos de Busca</h3>
-  <div style='background:#1e293b; padding:12px 14px; border-left:4px solid #38bdf8; border-radius:6px; margin-top:10px; text-align:left;'>
-    <p><strong>1️⃣ Totoro</strong> → Filme: <em>My Neighbor Totoro (1988)</em></p>
-    <p><strong>2️⃣ Spirited</strong> → Filme: <em>Spirited Away (A Viagem de Chihiro)</em></p>
-    <p><strong>3️⃣ Howl</strong> → Filme: <em>Howl’s Moving Castle (O Castelo Animado)</em></p>
-  </div>
-
-  <p style='margin-top:15px;'>Uma forma divertida e educativa de explorar o universo Ghibli e aprender sobre consumo de APIs REST com Python. 🌸</p>
-  <a href='https://ghibli-app-clean-49wxwh7t5ng2ugyawec5ur.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
-`)">💡 Como Usar</button>
-
+          <button class="btn-como-usar" onclick="abrirSidebar(`
+            <h2>💡 Como Usar – Ghibli Streamlit Clean</h2>
+            <p>App interativo que consome a <strong>API pública do Studio Ghibli</strong> e exibe filmes, personagens e locais icônicos.</p>
+            <ul>
+              <li>🎞️ Escolha a categoria (Films, People, Species, Locations, Vehicles)</li>
+              <li>🔍 Use a busca para encontrar um nome</li>
+              <li>📋 Veja os detalhes em formato JSON</li>
+            </ul>
+            <p>🌸 Uma forma divertida de aprender consumo de APIs REST com Python.</p>
+            <a href='https://ghibli-app-clean-49wxwh7t5ng2ugyawec5ur.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
+          `)">💡 Como Usar</button>
           <button class="btn-tecnologias" onclick="abrirSidebar(`
             <h2>⚙️ Tecnologias – Ghibli Streamlit Clean</h2>
-            <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
+            <ul>
               <li>🐍 <strong>Python</strong></li>
-              <li>🧩 <strong>Streamlit</strong> — interface interativa.</li>
-              <li>🌐 <strong>Requests</strong> — integração com API REST Ghibli.</li>
-              <li>⚡ <strong>API pública</strong> com dados de filmes e personagens.</li>
+              <li>🧩 <strong>Streamlit</strong></li>
+              <li>🌐 <strong>Requests</strong> — integração com API REST</li>
             </ul>
-            <p>App leve, didático e visual, mostrando uso prático de APIs com Python. 🎥</p>
+            <p>App leve, didático e visual para estudo de APIs. 🎥</p>
           `)">⚙️ Tecnologias</button>
         </div>
       </div>
@@ -163,60 +136,54 @@
         </div>
       </div>
 
+      <!-- Projeto 5 -->
+      <div class="card">
+        <h2>💡 EduFin AI Cloud</h2>
+        <p>Aplicativo de inteligência financeira com IA — análise e previsão da saúde financeira pessoal.</p>
+        <div class="actions">
+          <a href="https://edufin-cloud-v2-kzfj7wlptvvrnqoxcwmmrt.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
+          <button class="btn-como-usar" onclick="abrirSidebar(`
+            <h2>💡 Como Usar – EduFin AI Cloud</h2>
+            <p>O <strong>EduFin AI Cloud</strong> avalia sua <strong>saúde financeira</strong> com IA.</p>
+            <ol>
+              <li>🧾 Crie uma conta com e-mail e senha.</li>
+              <li>💰 Insira renda, gastos, dívidas e investimentos.</li>
+              <li>🤖 A IA calcula automaticamente o nível:</li>
+              <ul>
+                <li>🔴 Baixa</li>
+                <li>🟡 Média</li>
+                <li>🟢 Alta Saúde Financeira</li>
+              </ul>
+              <li>📊 Atualize e veja sua evolução.</li>
+            </ol>
+            <a href='https://edufin-cloud-v2-kzfj7wlptvvrnqoxcwmmrt.streamlit.app/' target='_blank' class='btn-azul'>🔗 Acessar Aplicação</a>
+          `)">💡 Como Usar</button>
+          <button class="btn-tecnologias" onclick="abrirSidebar(`
+            <h2>⚙️ Tecnologias – EduFin AI Cloud</h2>
+            <ul>
+              <li>🧠 TensorFlow / Keras — rede neural financeira</li>
+              <li>📊 Scikit-Learn — pré-processamento</li>
+              <li>💾 Firebase Firestore — armazenamento</li>
+              <li>🔐 Firebase Authentication — login seguro</li>
+              <li>🌐 Streamlit Cloud — hospedagem</li>
+              <li>📈 Pandas / NumPy — manipulação de dados</li>
+            </ul>
+            <p>🚀 Demonstra IA aplicada à <strong>educação financeira pessoal</strong>.</p>
+          `)">⚙️ Tecnologias</button>
+        </div>
+      </div>
+
     </section>
   </main>
 
-<footer class="footer">
-  <p> 2025 Claudio Hideki Yoshida | IA • Blockchain • Data Science</p>
-  <div class="contact-info">
-    <p>📧 <strong>claudio.y@hotmail.com</strong></p>
-    <p>💬 <strong>(11) 98636-4794</strong></p>
-    <p>💼 <a href="https://www.linkedin.com/in/claudio-yoshida-726510359/" target="_blank">linkedin.com/in/claudio-yoshida-726510359</a></p>
-  </div>
-</footer>
-
-
-<!-- Projeto 5 -->
-<div class="card">
-  <h2>💡 EduFin AI Cloud</h2>
-  <p>Aplicativo de inteligência financeira com IA — análise e previsão da saúde financeira pessoal.</p>
-  <div class="actions">
-    <a href="https://edufin-cloud-v2-kzfj7wlptvvrnqoxcwmmrt.streamlit.app/" target="_blank" class="btn-azul">Abrir Projeto</a>
-    <button class="btn-como-usar" onclick="abrirSidebar(`
-      <h2>💡 Como Usar – EduFin AI Cloud</h2>
-      <p>O <strong>EduFin AI Cloud</strong> utiliza inteligência artificial para avaliar sua <strong>saúde financeira</strong> com base em seus dados pessoais e hábitos de consumo.</p>
-      <ol>
-        <li>🧾 Crie uma conta com seu e-mail e senha.</li>
-        <li>💰 Insira informações como renda, gastos, dívidas e investimentos.</li>
-        <li>🤖 A IA calcula automaticamente sua <strong>saúde financeira</strong> em três níveis:</li>
-        <ul>
-          <li>🔴 Baixa Saúde Financeira</li>
-          <li>🟡 Média Saúde Financeira</li>
-          <li>🟢 Alta Saúde Financeira</li>
-        </ul>
-        <li>📊 Os resultados são salvos e podem ser atualizados a qualquer momento.</li>
-      </ol>
-      <a href='https://edufin-cloud-v2-kzfj7wlptvvrnqoxcwmmrt.streamlit.app/' target='_blank' class='btn-azul'>🔗 Acessar Aplicação</a>
-    `)">💡 Como Usar</button>
-
-    <button class="btn-tecnologias" onclick="abrirSidebar(`
-      <h2>⚙️ Tecnologias – EduFin AI Cloud</h2>
-      <p>Aplicação desenvolvida em <strong>Python</strong> com <strong>Streamlit</strong> e <strong>Firebase</strong>, integrando IA para classificação de perfis financeiros.</p>
-
-      <ul>
-        <li>🧠 <strong>TensorFlow / Keras</strong> — modelo de rede neural para classificação de saúde financeira.</li>
-        <li>📊 <strong>Scikit-Learn</strong> — pré-processamento e normalização de dados.</li>
-        <li>💾 <strong>Firebase Firestore</strong> — armazenamento dos dados e resultados dos usuários.</li>
-        <li>🔐 <strong>Firebase Authentication</strong> — login e cadastro seguros.</li>
-        <li>🌐 <strong>Streamlit Cloud</strong> — hospedagem da aplicação interativa.</li>
-        <li>📈 <strong>Pandas / NumPy</strong> — manipulação e geração de dados sintéticos de treino.</li>
-      </ul>
-
-      <p>🚀 O EduFin AI Cloud demonstra como IA e ciência de dados podem ser aplicadas à <strong>educação financeira pessoal</strong>, ajudando o usuário a entender e melhorar sua vida financeira.</p>
-    `)">⚙️ Tecnologias</button>
-  </div>
-</div>
-
+  <footer class="footer">
+    <p>2025 Claudio Hideki Yoshida | IA • Blockchain • Data Science</p>
+    <div class="contact-info">
+      <p>📧 <strong>claudio.y@hotmail.com</strong></p>
+      <p>💬 <strong>(11) 98636-4794</strong></p>
+      <p>💼 <a href="https://www.linkedin.com/in/claudio-yoshida-726510359/" target="_blank">linkedin.com/in/claudio-yoshida-726510359</a></p>
+    </div>
+  </footer>
 
   <!-- ===== Overlay e Sidebar ===== -->
   <div id="overlay" class="overlay" onclick="fecharSidebar()"></div>
@@ -249,23 +216,15 @@
     function abrirComoUsarSmartFin() {
       abrirSidebar(`
         <h2>💡 Como Usar – SmartFin AI Blockchain</h2>
-        <p>O <strong>SmartFin AI Blockchain</strong> é uma simulação de <strong>fintech antifraude</strong> que combina <strong>IA</strong> e <strong>Blockchain</strong> para análise de transações.</p>
-        <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
-          <li>🌐 Testa conectividade com backend <strong>Render</strong>.</li>
-          <li>📋 Mostra transações e indica suspeitas.</li>
-          <li>💬 Chatbot explica motivos da classificação.</li>
-          <li>📈 Calcula <strong>pontuação de risco</strong>.</li>
-          <li>🔗 Simula <strong>Blockchain</strong> com assinaturas SHA-256.</li>
-          <li>📜 Permite registrar blocos no <strong>Ledger público</strong>.</li>
+        <p>O <strong>SmartFin AI Blockchain</strong> é uma simulação antifraude que combina IA e Blockchain para análise de transações.</p>
+        <ul>
+          <li>🌐 Testa conectividade com backend Render</li>
+          <li>📋 Mostra transações suspeitas</li>
+          <li>💬 Chatbot explica classificações</li>
+          <li>📈 Calcula pontuação de risco</li>
+          <li>🔗 Simula Blockchain com SHA-256</li>
         </ul>
-
-        <div style='background:#1e293b; padding:12px 14px; border-left:4px solid #facc15; border-radius:6px; margin-top:15px; text-align:left;'>
-          ⚠️ <strong>Atenção:</strong> o backend está hospedado no <strong>Render (plano gratuito)</strong>.<br>
-          Ele hiberna após alguns minutos sem uso e pode levar <strong>30–60s</strong> para acordar.<br><br>
-          🌀 Se aparecer como <strong>"Offline"</strong>, basta atualizar a página e aguardar.
-        </div>
-
-        <p style='margin-top:18px;'>Demonstra como <strong>IA + Blockchain</strong> podem atuar juntas na prevenção de fraudes financeiras. 🧠💳</p>
+        <p>🚀 Demonstra integração de IA + Blockchain. 🧠💳</p>
         <a href='https://smartfin-ai-blockchain-scgxhy39vkbvgguhh5cqlr.streamlit.app/' target='_blank' class='btn-azul'>🔗 Abrir Aplicação</a>
       `);
     }
@@ -273,16 +232,16 @@
     function abrirTecnologiasSmartFin() {
       abrirSidebar(`
         <h2>⚙️ Tecnologias – SmartFin AI Blockchain</h2>
-        <ul style='text-align:left; line-height:1.6; padding-left:18px;'>
-          <li>🐍 <strong>Python</strong> — linguagem base.</li>
-          <li>🧩 <strong>Streamlit</strong> — frontend interativo.</li>
-          <li>⚡ <strong>FastAPI</strong> — backend hospedado no Render.</li>
-          <li>📊 <strong>Pandas</strong> — manipulação de dados.</li>
-          <li>🧠 <strong>Scikit-learn</strong> + <strong>PyOD</strong> — detecção de anomalias.</li>
-          <li>🔒 <strong>Hashlib</strong> — assinaturas SHA-256 simulando blockchain.</li>
-          <li>💾 <strong>Ledger CSV</strong> — armazenamento dos blocos validados.</li>
+        <ul>
+          <li>🐍 Python</li>
+          <li>🧩 Streamlit</li>
+          <li>⚡ FastAPI — backend no Render</li>
+          <li>📊 Pandas</li>
+          <li>🧠 Scikit-learn + PyOD — anomalias</li>
+          <li>🔒 Hashlib — assinaturas SHA-256</li>
+          <li>💾 Ledger CSV — armazenamento</li>
         </ul>
-        <p>Arquitetura educacional unindo IA, backend em nuvem e blockchain simulada. 💹🔗</p>
+        <p>Arquitetura educacional unindo IA, backend e blockchain simulada. 💹🔗</p>
       `);
     }
   </script>
