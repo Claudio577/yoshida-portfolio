@@ -205,10 +205,41 @@ header p {
 }
 
 /* ===== Rodapé ===== */
-footer {
-  margin-top: 3rem;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #9ca3af;
+footer.footer {
+  margin-top: 80px; /* dá espaço entre os cards e o rodapé */
+  padding: 40px 20px;
+  text-align: center;
+  background: #0f172a; /* fundo ligeiramente mais escuro para contraste */
+  color: #94a3b8;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.3);
 }
 
+footer.footer p {
+  margin: 6px 0;
+}
+
+footer.footer .contact-info {
+  margin-top: 14px;
+  line-height: 1.7;
+}
+
+footer.footer a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer.footer a:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
+
+/* Garante que o rodapé fique no fim da página mesmo com pouco conteúdo */
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
