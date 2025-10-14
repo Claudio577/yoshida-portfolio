@@ -206,10 +206,10 @@ header p {
 
 /* ===== Rodapé ===== */
 footer.footer {
-  margin-top: 80px; /* dá espaço entre os cards e o rodapé */
+  margin-top: 80px;
   padding: 40px 20px;
   text-align: center;
-  background: #0f172a; /* fundo ligeiramente mais escuro para contraste */
+  background: #0f172a;
   color: #94a3b8;
   font-size: 0.95rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -236,7 +236,7 @@ footer.footer a:hover {
   text-decoration: underline;
 }
 
-/* Garante que o rodapé fique no fim da página mesmo com pouco conteúdo */
+/* Garante que o rodapé fique sempre abaixo dos projetos */
 main {
   min-height: 80vh;
   display: flex;
