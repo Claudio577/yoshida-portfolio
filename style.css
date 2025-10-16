@@ -6,6 +6,7 @@ body {
   margin: 0;
   text-align: center;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* ===== Cabeçalho ===== */
@@ -17,42 +18,58 @@ header {
 }
 
 header h1 {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   margin: 0;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
 }
 
 header p {
   font-size: 1.1rem;
   color: #d1fae5;
+  margin-top: 6px;
 }
 
-/* ===== Grade ===== */
+/* ===== Grade de projetos ===== */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.8rem;
+  padding: 2.5rem 2rem;
+  justify-items: center;
+  align-items: start;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-/* ===== Card ===== */
+/* ===== Card de projeto ===== */
 .card {
   background: #111827;
   border-radius: 18px;
-  padding: 1.5rem;
+  padding: 1.6rem 1.4rem;
+  width: 100%;
+  max-width: 370px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(45, 212, 191, 0.1);
-  transition: box-shadow 0.25s ease, border-color 0.25s ease;
-  transform: translateZ(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.25s ease;
 }
 
 .card:hover {
-  box-shadow: 0 6px 22px rgba(16, 185, 129, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.45);
   border-color: rgba(45, 212, 191, 0.25);
 }
 
 .card h2 {
   color: #6ee7b7;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  font-size: 0.98rem;
+  color: #e2e8f0;
+  margin-bottom: 1.2rem;
 }
 
 /* ===== Botões ===== */
@@ -61,7 +78,6 @@ header p {
   justify-content: center;
   gap: 0.6rem;
   flex-wrap: wrap;
-  margin-top: 1.2rem;
 }
 
 .btn-azul {
@@ -83,6 +99,7 @@ header p {
   box-shadow: 0 0 18px rgba(45, 212, 191, 0.6);
 }
 
+/* Botões secundários */
 .btn-como-usar,
 .btn-tecnologias {
   border-radius: 10px;
@@ -128,7 +145,7 @@ header p {
   right: 0;
   width: 400px;
   max-width: 90%;
-  height: 100dvh; /* altura dinâmica moderna */
+  height: 100dvh;
   background: #0f172a;
   color: #f8fafc;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.6);
@@ -140,7 +157,6 @@ header p {
   border-left: 1px solid rgba(45, 212, 191, 0.3);
   scrollbar-width: thin;
   scrollbar-color: #22d3ee #0f172a;
-  overscroll-behavior: contain;
 }
 
 .sidebar.aberta {
@@ -192,20 +208,18 @@ header p {
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition: opacity 0.4s ease;
   z-index: 10000;
-  visibility: hidden;
 }
 
 .overlay.visivel {
   opacity: 1;
   pointer-events: all;
-  visibility: visible;
 }
 
 /* ===== Rodapé ===== */
 footer.footer {
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 40px 20px;
   text-align: center;
   background: #0f172a;
@@ -235,28 +249,35 @@ footer.footer a:hover {
   text-decoration: underline;
 }
 
-/* ===== Estrutura principal ===== */
-main {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 /* ===== Responsividade ===== */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   header p {
     font-size: 1rem;
   }
 
-  .card {
-    padding: 1rem;
+  .grid {
+    padding: 1.5rem;
+    gap: 1.2rem;
   }
 
+  .card {
+    max-width: 95%;
+  }
+
+  .sidebar {
+    width: 90%;
+  }
+
+  footer.footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
   .btn-azul,
   .btn-como-usar,
   .btn-tecnologias {
@@ -264,12 +285,11 @@ main {
     padding: 8px 14px;
   }
 
-  .sidebar {
-    width: 100%;
-    max-width: none;
+  .card h2 {
+    font-size: 1.1rem;
   }
 
-  footer.footer {
-    font-size: 0.85rem;
+  .card p {
+    font-size: 0.9rem;
   }
 }
