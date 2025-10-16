@@ -32,9 +32,9 @@ header p {
 /* ===== Grade de projetos ===== */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1.8rem;
-  padding: 2.5rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem 2rem; /* mais espaço entre as linhas e colunas */
+  padding: 3rem 2rem 5rem; /* aumenta espaço interno */
   justify-items: center;
   align-items: start;
   width: 100%;
