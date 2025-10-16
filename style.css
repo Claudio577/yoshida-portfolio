@@ -98,6 +98,7 @@ header p {
   color: #a7f3d0;
   border: 1px solid rgba(45, 212, 191, 0.4);
 }
+
 .btn-como-usar:hover {
   background: rgba(16, 185, 129, 0.4);
   color: #fff;
@@ -111,6 +112,7 @@ header p {
   color: #bae6fd;
   border: 1px solid rgba(56, 189, 248, 0.5);
 }
+
 .btn-tecnologias:hover {
   background: rgba(14, 165, 233, 0.4);
   color: #fff;
@@ -126,12 +128,11 @@ header p {
   right: 0;
   width: 400px;
   max-width: 90%;
-  height: 100vh; /* fallback para navegadores antigos */
-  height: 100dvh; /* altura dinâmica (preferida) */
+  height: 100dvh; /* altura dinâmica moderna */
   background: #0f172a;
   color: #f8fafc;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.6);
-  padding: 3.5rem 1.5rem 7rem; /* + espaço inferior visível */
+  padding: 3.5rem 1.5rem 7rem;
   transform: translateX(100%);
   transition: transform 0.4s ease;
   z-index: 10001;
@@ -140,11 +141,7 @@ header p {
   scrollbar-width: thin;
   scrollbar-color: #22d3ee #0f172a;
   overscroll-behavior: contain;
-  will-change: transform;
 }
-
-
-
 
 .sidebar.aberta {
   transform: translateX(0);
@@ -195,13 +192,15 @@ header p {
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
   z-index: 10000;
+  visibility: hidden;
 }
 
 .overlay.visivel {
   opacity: 1;
   pointer-events: all;
+  visibility: visible;
 }
 
 /* ===== Rodapé ===== */
@@ -236,10 +235,41 @@ footer.footer a:hover {
   text-decoration: underline;
 }
 
-/* Garante que o rodapé fique sempre abaixo dos projetos */
+/* ===== Estrutura principal ===== */
 main {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .btn-azul,
+  .btn-como-usar,
+  .btn-tecnologias {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+
+  .sidebar {
+    width: 100%;
+    max-width: none;
+  }
+
+  footer.footer {
+    font-size: 0.85rem;
+  }
 }
