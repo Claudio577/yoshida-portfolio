@@ -293,3 +293,19 @@ footer.footer a:hover {
     font-size: 0.9rem;
   }
 }
+/* === Correção do espaçamento entre header e projetos === */
+.intro {
+  max-width: 900px;
+  margin: 20px auto 0;     /* Remove espaço extra inferior */
+  padding: 0 20px;
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  background: transparent;  /* Garante que o gradiente do body apareça */
+  color: #f8fafc;
+}
+
+main {
+  margin-top: 0;
+  padding-top: 0;
+}
