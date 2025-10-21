@@ -309,3 +309,20 @@ main {
   margin-top: 0;
   padding-top: 0;
 }
+/* === Correção de alinhamento dos cards === */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* faz todos ficarem na mesma altura */
+  gap: 2.5rem 2rem;
+}
+
+.card {
+  flex: 1 1 320px; /* garante largura mínima */
+  max-width: 370px;
+  min-height: 270px; /* uniformiza altura */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
